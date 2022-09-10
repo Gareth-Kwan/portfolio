@@ -4,15 +4,15 @@
   margin: 0;
 }
 
-body {
+/* body {
   background-color: #d9dcd6;
-}
+} */
 
 /* Header section */
 .header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
+  background-color: darkslategrey;
   color: #ffffff;
 }
 
