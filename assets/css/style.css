@@ -1,5 +1,6 @@
 :root {
   --common-font: "Trebuchet MS", "sans-serif", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial";
+  --dark-red: rgba(131, 3, 3, 0.9);
 }
 
 * {
@@ -19,7 +20,7 @@ h2 {
 
 /* Header section */
 .header {
-  padding: 20%;
+  padding: 22%;
   font-family: var(--common-font);
   background: url(../images/download.png);
   color: #ffffff;
@@ -108,44 +109,148 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
-#card-1 {
+/* Portfolio Section - Card 1*/
+.card-1 {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
   position: relative;
 }
 
-#card-1 img {
+.card-1 img {
   display: flex;
-  flex: 0 0 300px;
+  flex: 1;
   margin-top: 2%;
   margin-bottom: 2%;
-  height: 60%;
-  width: 75%;
+  height: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50px;
   border: 1px solid red;
 }
 
-#card-1 div {
+.card-1-text {
   position: absolute;
-  bottom: 3%;
+  height: 10%;
+  width: 15%;
+  bottom: 15%;
+  left: 17.5%;
+  color: white;
+  background-color: var(--dark-red);
+  border-radius: 0px 25px 25px 0px;
+  font-size: 150%;
+  text-decoration: none;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: auto;
+}
+
+.card-1-link {
+  color: white;
+  text-decoration: none;
+}
+
+.card-1-link:hover {
+  color: red;
+}
+
+/* Card 2 */
+.card-2-and-3 {
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card-2 {
+  width: 50%;
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+
+.card-2 img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 0 0 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  border: 1px solid red;
+  position: relative;
+  flex-direction: row;
+}
+
+.card-2-text {
+  position: absolute;
+  height: 5%;
+  width: 15%;
+  bottom: 25%;
+  left: 8%;
+  color: white;
+  background-color: var(--dark-red);
+  border-radius: 0px 25px 25px 0px;
+  font-size: 120%;
+  text-decoration: none;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: auto;
+}
+/* Card 3 */
+
+.card-3 {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card-3 img {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 90%;
+  border-radius: 50px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.card-3-text {
+  position: absolute;
+  height: 5%;
+  width: 15%;
+  bottom: 25%;
   left: 5%;
   color: white;
-  background-color: rgba(255, 0, 0, 0.431);
-}
-
-#card-2 {
-}
-
-#card-3 {
+  background-color: var(--dark-red);
+  border-radius: 0px 25px 25px 0px;
+  font-size: 120%;
+  text-decoration: none;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: auto;
 }
 /* Contact Me Section */
 .contact {
   color: white;
   display: flex;
 }
+
 /* Media Queries */
 @media only screen and (max-width: 425px) {
   .about-me {
@@ -161,6 +266,11 @@ nav ul li a:hover {
     font-size: small;
     text-align: center;
   }
+
+  .card-1-text {
+    font-size: 65%;
+    bottom: 18%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -170,5 +280,16 @@ nav ul li a:hover {
 
   .about-me {
     font-size: medium;
+  }
+  .card-1-text {
+    font-size: 75%;
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .card-1-text {
+    font-size: 100%;
+    bottom: 15%;
   }
 }
