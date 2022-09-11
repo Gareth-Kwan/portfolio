@@ -5,54 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gareth Kwan - Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1>Portfolio</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">ABOUT ME</a>
-          </li>
-          <li>
-            <a href="#portfolio">PORTFOLIO</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Header Section -->
+    <header>
+      <h1 class="header" id="home">
+        Welcome to my Portfolio.<br />
+        I am <span class="name"> Gareth Kwan</span> and I am a full-stack developer.
+      </h1>
     </header>
+    <!-- Nav Section -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#home" class="home">HOME</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT ME</a>
+        </li>
+        <li>
+          <a href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- About Me Section -->
     <main>
-      <section id="about" class="search-engine-optimization">
-        <img src="./assets/images/Screenshot 2022-09-04 195903.jpg" class="float-left" alt="" />
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos illo praesentium neque laudantium esse
-          sit quae perspiciatis ipsum quos magni, quisquam, a molestias eius vel assumenda reprehenderit
-          perferendis optio minima!
-        </p>
-      </section>
+      <section class="about-me" id="about">
+        <img
+          class="avatar"
+          src="./assets/images/1000_F_285476473_CKbQ386Hc3HWzJ0Rdda9wNBoWID1EkzH.jpg"
+          alt="" />
 
-      <section class="portfolio">
+        <div>
+          <h2 class="about-me-text">About Me</h2>
+          <p class="about-me-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos illo praesentium neque laudantium
+            esse sit quae perspiciatis ipsum quos magni, quisquam, a molestias eius vel assumenda
+            reprehenderit perferendis optio minima! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aperiam ea possimus corrupti maiores rerum libero, vitae unde doloribus reiciendis iure dolores
+            neque eius, delectus dicta rem enim, corporis ipsum voluptate.
+          </p>
+        </div>
+      </section>
+      <!-- Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
         <article id="card-1">
-          <img src="./assets/images/Screenshot 2022-09-04 195903.jpg" class="float-right" alt="" />
-          <h2>Project 1</h2>
+          <img src="./assets/images/8174694.jpg" alt="" />
+          <h3>Project 1</h3>
+          <a href="https://gareth0201.github.io/module-1-challenge/">Semantics and Accessibility Challenge</a>
         </article>
 
-        <article id="card-2">
-          <img src="./assets/images/Screenshot 2022-09-04 195903.jpg" class="float-right" alt="" />
-          <h2>Project 2</h2>
-        </article>
+        <div>
+          <article id="card-2">
+            <img src="./assets/images/8174738.jpg" class="float-right" alt="" />
+            <h3>Project 2</h3>
+          </article>
+
+          <article id="card-3">
+            <img src="./assets/images/istockphoto-1336271758-170667a.jpg" alt="" />
+            <h3>Project 3</h3>
+          </article>
+        </div>
       </section>
 
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <p>999-999-9999</p>
-        <p>example@google.com</p>
-        <p>GitHub</p>
+      <section class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <p>Phone: 999-999-9999</p>
+        <p>Email: example@google.com</p>
+        <a herf="https://github.com/Gareth0201">GitHub</a>
       </section>
     </main>
   </body>
