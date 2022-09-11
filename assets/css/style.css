@@ -102,9 +102,49 @@ nav ul li a:hover {
   border-top: 1px solid red;
 }
 
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#card-1 {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  position: relative;
+}
+
+#card-1 img {
+  display: flex;
+  flex: 0 0 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 60%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  border: 1px solid red;
+}
+
+#card-1 div {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.431);
+}
+
+#card-2 {
+}
+
+#card-3 {
+}
 /* Contact Me Section */
 .contact {
   color: white;
+  display: flex;
 }
 /* Media Queries */
 @media only screen and (max-width: 425px) {
