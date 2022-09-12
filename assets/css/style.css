@@ -1,5 +1,6 @@
 :root {
-  --common-font: "Trebuchet MS", "sans-serif", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial";
+  --common-font: "Roboto", "Noto Sans", "Trebuchet MS", "sans-serif", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial";
   --dark-red: rgba(131, 3, 3, 0.9);
 }
 
@@ -12,6 +13,7 @@
 
 body {
   background-color: black;
+  font-family: var(--common-font);
 }
 
 h2 {
@@ -21,7 +23,6 @@ h2 {
 /* Header section */
 .header {
   padding: 22%;
-  font-family: var(--common-font);
   background: url(../images/download.png);
   color: #ffffff;
   font-size: 250%;
@@ -39,9 +40,6 @@ h2 {
 nav {
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: black;
   padding: 1%;
   border-bottom: 1px solid red;
@@ -52,19 +50,27 @@ nav ul {
   height: 100%;
   display: flex;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
+  display: flex;
+  justify-content: center;
   height: 100%;
-  border-left: 4px solid red;
+  width: auto;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 nav ul li a {
+  display: block;
   height: 100%;
-  display: inline-block;
+  width: auto;
   color: white;
   text-decoration: none;
   padding-left: 5px;
+  border-left: 4px solid red;
 }
 
 nav ul li a:hover {
@@ -155,6 +161,11 @@ nav ul li a:hover {
   color: red;
 }
 
+.card-1 img:hover {
+  color: rgb(193, 0, 0);
+  box-shadow: 0 5px 10px red;
+}
+
 /* Card 2 */
 .card-2-and-3 {
   display: flex;
@@ -203,6 +214,11 @@ nav ul li a:hover {
   padding-top: 0.5%;
   padding-bottom: auto;
 }
+
+.card-2 img:hover {
+  color: rgb(193, 0, 0);
+  box-shadow: 0 5px 10px red;
+}
 /* Card 3 */
 
 .card-3 {
@@ -220,7 +236,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   flex: 0 0 300px;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   height: 80%;
@@ -245,10 +261,19 @@ nav ul li a:hover {
   padding-top: 0.5%;
   padding-bottom: auto;
 }
+
+.card-3 img:hover {
+  color: rgb(193, 0, 0);
+  box-shadow: 0 5px 10px red;
+}
 /* Contact Me Section */
 .contact {
-  color: white;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 125%;
 }
 
 /* Media Queries */
