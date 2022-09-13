@@ -139,7 +139,7 @@ nav ul li a:hover {
 }
 
 .card-large {
-  background-image: url("/assets/images/8174694.jpg");
+  background-image: url("../images/8174694.jpg");
   background-size: cover;
   background-position: center;
   /* display: flex; */
@@ -189,7 +189,7 @@ nav ul li a:hover {
 
 /* Card 2 */
 .card-2 {
-  background-image: url("/assets/images/8174738.jpg");
+  background-image: url("../images/8174738.jpg");
   background-size: cover;
   background-position: center;
   display: block;
@@ -249,7 +249,7 @@ nav ul li a:hover {
 /* Card 3 */
 
 .card-3 {
-  background-image: url("/assets/images/istockphoto-1336271758-170667a.jpg");
+  background-image: url("../images/istockphoto-1336271758-170667a.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
