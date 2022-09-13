@@ -23,7 +23,7 @@ h2 {
 /* Header section */
 .header {
   padding: 22%;
-  background: url(../images/download.png);
+  background: url(../images/header\ wallpaper.png);
   color: #ffffff;
   font-size: 250%;
   text-align: center;
@@ -139,7 +139,7 @@ nav ul li a:hover {
 }
 
 .card-large {
-  background-image: url("../images/8174694.jpg");
+  background: url("../images/project\ 1.jpg");
   background-size: cover;
   background-position: center;
   /* display: flex; */
@@ -189,7 +189,7 @@ nav ul li a:hover {
 
 /* Card 2 */
 .card-2 {
-  background-image: url("../images/8174738.jpg");
+  background: url("../images/project\ 2.jpg");
   background-size: cover;
   background-position: center;
   display: block;
@@ -249,7 +249,7 @@ nav ul li a:hover {
 /* Card 3 */
 
 .card-3 {
-  background-image: url("../images/istockphoto-1336271758-170667a.jpg");
+  background: url("../images/project\ 3.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
